@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang=en>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>snow</title>
+    <meta content="" name="description">
+    <meta content="Ivy" name="author">
+  <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <button class="yellow" id="yellowbutton"></button>
+  <button class="black" id="blackbutton"></button>
+  <button class="blue" id="bluebutton"></button>
+  <a href="../4-DOM-Pig-Game/index.html">To Pig Game</a>
+  <a href="../index.html">To Canvas</a>
+  <script>
+  $(document).ready(function() {
+    $("#yellowbutton").click(function() {
+      $("body").removeClass();
+      $("body").addClass("yellow");
+    })
+    $("#blackbutton").click(function() {
+      $("body").removeClass();
+      $("body").addClass("black");
+    })
+    $("#bluebutton").click(function() {
+      $("body").removeClass();
+      $("body").addClass("blue");
+    })
+  })
+    </script>
+
+
+    <canvas id="snow" ></canvas>
+
+    <script src="snow.js"></script>
+    <div id="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  </div>
+
+</body>
+</html>

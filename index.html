@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang=en>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Canvas</title>
+    <meta content="" name="description">
+    <meta content="Ivy" name="author">
+    <!-- FIND THE FONTS <a href="https://fontcdn.org/"> -->
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <div class="slidecontainer row">
+    <div>
+      <p >Amount of circles</p>
+      <input type="range" min="100" max="1000" id="ballnumber" value="100" oninput="changeB(this.value)">
+
+    </div>
+    <a href="Snow/index.html">To Snow</a>
+    <a href="4-DOM-Pig-Game/index.html">To Pig Game</a>
+    <!-- <div class="d-inline">
+      <p >Gravity</p>
+      <input type="range" min="0" max="1" value="0" id="gravitation">
+    </div> -->
+  </div>
+
+
+  <canvas id="canvas">
+
+  </canvas>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="canvas.js"></script>
+</body>
+</html>
